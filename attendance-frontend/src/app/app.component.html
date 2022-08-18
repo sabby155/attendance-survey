@@ -1,0 +1,28 @@
+<!-- <mat-flat-button>dfdf</mat-flat-button> -->
+
+<section class="main">
+  
+  <div class="class-info">
+    <h1>{{title}}</h1>
+    <p>{{date}}</p>
+    <p>Class: BlackRock Tech Career Accelerator</p>
+  </div>
+
+  <mat-form-field>
+    <mat-label>Student or Teacher?</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let user of users" [value]="user.value">
+        {{user.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="main-container">
+
+    <button mat-flat-button>I'm Present!</button>
+
+  </div>
+
+</section>
+
+<app-agenda-module></app-agenda-module>
